@@ -3,254 +3,156 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mont Blanc Residence | Apartamentos frente ao mar em Balneário Gaivota</title>
-  <meta name="description" content="Conheça o Mont Blanc Residence: apartamentos de 2 e 3 suítes e coberturas duplex frente ao mar em Balneário Gaivota/SC. Solicite plantas e valores.">
-  <meta name="theme-color" content="#0c2636">
+  <title>Mont Blanc Residence | Frente ao mar em Balneário Gaivota</title>
+  <meta name="description" content="Apartamentos de 2 e 3 suítes e coberturas duplex frente ao mar em Balneário Gaivota/SC. Conheça as plantas do Mont Blanc Residence.">
+  <meta name="theme-color" content="#111714">
   <meta property="og:title" content="Mont Blanc Residence — Exclusividade em frente ao mar">
-  <meta property="og:description" content="Apartamentos de 2 e 3 suítes e coberturas duplex em Balneário Gaivota/SC.">
+  <meta property="og:description" content="52 residências, arquitetura neoclássica e um pavimento inteiro de lazer diante do mar.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/hero-desktop.jpg">
+  <meta property="og:image" content="assets/official-hero.webp">
   <link rel="icon" href="assets/favicon.png">
-  <link rel="preload" as="image" href="assets/hero-desktop.jpg" media="(min-width: 681px)">
-  <link rel="preload" as="image" href="assets/hero-mobile.jpg" media="(max-width: 680px)">
+  <link rel="preload" as="image" href="assets/official-hero.webp">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "GWP Empreendimentos",
-        "url": "https://www.gwpempreendimentos.com.br/",
-        "telephone": "+55 48 99186-1320",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Av. Beira Mar, 701",
-          "addressLocality": "Balneário Gaivota",
-          "addressRegion": "SC",
-          "addressCountry": "BR"
-        }
-      },
-      {
-        "@type": "Place",
-        "name": "Mont Blanc Residence",
-        "description": "Empreendimento residencial frente ao mar com apartamentos de 2 e 3 suítes e coberturas duplex.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Balneário Gaivota",
-          "addressRegion": "SC",
-          "addressCountry": "BR"
-        }
-      }
-    ]
-  }
+  {"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"GWP Empreendimentos","url":"https://www.gwpempreendimentos.com.br/","telephone":"+55 48 99186-1320"},{"@type":"Place","name":"Mont Blanc Residence","description":"Empreendimento residencial frente ao mar em Balneário Gaivota/SC.","address":{"@type":"PostalAddress","addressLocality":"Balneário Gaivota","addressRegion":"SC","addressCountry":"BR"}}]}
   </script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-  <header class="hero" id="topo">
-    <div class="container">
-      <div class="hero-header" aria-label="Identificação do empreendimento">
-        <div class="brand-lockup">
-          <img src="assets/mont-blanc-logo.svg" alt="Mont Blanc Residence">
-          <img src="assets/gwp-logo.svg" alt="GWP Empreendimentos">
-        </div>
-        <a class="button button--ghost" data-whatsapp data-track="header_whatsapp" data-location="header" target="_blank" rel="noopener">Falar com consultor</a>
-      </div>
-
-      <div class="hero-grid">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Balneário Gaivota · Santa Catarina</p>
-          <h1>Exclusividade e sofisticação em frente ao mar.</h1>
-          <p class="hero-sub">Apartamentos de 2 e 3 suítes e coberturas duplex em Balneário Gaivota/SC.</p>
-          <p class="hero-facts"><span>Frente-mar</span><span>52 apartamentos</span><span>Lazer completo</span></p>
-          <div class="hero-actions">
-            <a class="button" href="#plantas" data-track="hero_plants" data-location="hero">Conhecer as plantas</a>
-            <a class="button button--ghost" data-whatsapp data-track="hero_whatsapp" data-location="hero" target="_blank" rel="noopener">Falar com um consultor</a>
-          </div>
-        </div>
-
-        <form class="lead-card" data-lead-form data-form-location="hero" aria-labelledby="hero-form-title" data-reveal>
-          <p class="eyebrow">Atendimento personalizado</p>
-          <h2 id="hero-form-title">Receba plantas e valores</h2>
-          <p>Informe seus dados para conhecer as opções disponíveis.</p>
-          <div class="field">
-            <label for="hero-name">Nome</label>
-            <input id="hero-name" name="name" type="text" autocomplete="name" required placeholder="Como podemos chamar você?">
-          </div>
-          <div class="field">
-            <label for="hero-phone">WhatsApp</label>
-            <input id="hero-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required minlength="14" placeholder="(48) 99999-9999">
-          </div>
-          <button class="button button--dark button--full" type="submit" data-track="hero_form_submit" data-location="hero">Receber plantas e valores</button>
-          <p class="microcopy">Um consultor entrará em contato para apresentar as opções disponíveis.</p>
-          <p class="form-status" data-form-status role="status" aria-live="polite" hidden></p>
-        </form>
-      </div>
-    </div>
+  <header class="topbar" data-header>
+    <a class="topbar__brand" href="#topo" aria-label="Mont Blanc Residence — início"><img src="assets/mont-blanc-logo.svg" alt="Mont Blanc Residence"></a>
+    <div class="topbar__right"><span>Balneário Gaivota · SC</span><a class="text-link" data-whatsapp data-track="header_whatsapp" data-location="header" target="_blank" rel="noopener">Atendimento <span aria-hidden="true">↗</span></a></div>
   </header>
 
   <main id="conteudo">
-    <section class="authority" aria-label="Informações de confiança">
-      <div class="container authority-grid">
-        <div class="authority-item"><strong>GWP</strong><span>Empreendimentos</span></div>
-        <div class="authority-item"><strong>+10 anos</strong><span>de história</span></div>
-        <div class="authority-item"><strong>Balneário Gaivota</strong><span>Santa Catarina</span></div>
-        <div class="authority-item"><strong>R5-92.105</strong><span>Registro de incorporação</span></div>
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <div class="hero__shade"></div>
+      <div class="hero__content" data-reveal>
+        <p class="kicker kicker--light">Mont Blanc Residence · Frente-mar</p>
+        <h1 id="hero-title">Exclusividade<br>à altura do mar.</h1>
+        <p class="hero__lead">Apartamentos de 2 e 3 suítes e coberturas duplex em Balneário Gaivota.</p>
+
+        <form class="hero-form" data-lead-form data-form-location="hero" aria-label="Receba plantas e valores">
+          <div class="hero-form__intro"><strong>Receba plantas e valores</strong><span>Atendimento personalizado pela GWP</span></div>
+          <div class="field field--line"><label for="hero-name">Nome</label><input id="hero-name" name="name" type="text" autocomplete="name" required placeholder="Seu nome"></div>
+          <div class="field field--line"><label for="hero-phone">WhatsApp</label><input id="hero-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required minlength="14" placeholder="(48) 99999-9999"></div>
+          <button class="arrow-button" type="submit" data-track="hero_form_submit" data-location="hero" aria-label="Receber plantas e valores"><span>Solicitar</span><span aria-hidden="true">↗</span></button>
+          <p class="form-status hero-form__status" data-form-status role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+      <div class="hero__foot"><span>20 pavimentos</span><span>52 apartamentos</span><span>796,78 m² de lazer</span></div>
+    </section>
+
+    <section class="intro section" aria-labelledby="intro-title">
+      <div class="shell intro__grid">
+        <div class="intro__number" data-reveal><span>01</span><i></i></div>
+        <div class="intro__copy" data-reveal>
+          <p class="kicker">O empreendimento</p>
+          <h2 id="intro-title">Entre linhas clássicas<br>e o horizonte.</h2>
+          <p>Uma presença arquitetônica singular à beira-mar. O Mont Blanc combina a proporção neoclássica com ambientes contemporâneos, amplos e abertos à paisagem.</p>
+          <a class="editorial-link" href="#residencias">Conhecer as residências <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="intro__portrait" data-reveal><img src="assets/facade-wide-1.webp" alt="Fachada do Mont Blanc Residence vista da praia" loading="lazy"><figcaption>Fachada frente-mar · imagem ilustrativa</figcaption></figure>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="diferenciais-title">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <div>
-            <p class="eyebrow">Um projeto singular</p>
-            <h2 class="title title--medium" id="diferenciais-title">Alto padrão em cada perspectiva.</h2>
+    <section class="signature" aria-labelledby="signature-title">
+      <figure class="signature__image"><img src="assets/hall.jpg" alt="Hall do Mont Blanc Residence com acabamento neoclássico" loading="lazy"></figure>
+      <div class="signature__panel" data-reveal>
+        <p class="kicker">A assinatura Mont Blanc</p>
+        <h2 id="signature-title">Detalhes que não precisam elevar a voz.</h2>
+        <div class="signature__list">
+          <div><span>01</span><p>Fachada e hall de inspiração neoclássica</p></div>
+          <div><span>02</span><p>Vista para o mar e para a serra em todos os apartamentos</p></div>
+          <div><span>03</span><p>Áreas comuns mobiliadas, decoradas e climatizadas</p></div>
+          <div><span>04</span><p>Reconhecimento facial e monitoramento por câmeras</p></div>
+          <div><span>05</span><p>Infraestrutura para automação e veículo elétrico</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="residences section section--ink" id="residencias" aria-labelledby="residences-title">
+      <div class="shell">
+        <div class="section-heading section-heading--light" data-reveal>
+          <div><p class="kicker kicker--light">Residências</p><h2 id="residences-title">Espaço para viver<br>o extraordinário.</h2></div>
+          <p>Plantas que equilibram privacidade e convivência, com living integrado, churrasqueira a carvão, hobby box e duas ou mais vagas de garagem.</p>
+        </div>
+        <div class="plans">
+          <div class="plans__visual" data-reveal><img src="assets/plan-type.webp" alt="Planta ilustrativa de apartamento tipo com três suítes" data-plan-image loading="lazy"><span data-plan-caption>Unidade tipo · Final 1</span></div>
+          <div class="plans__choices" role="tablist" aria-label="Categorias de plantas">
+            <button class="plan-choice is-active" type="button" role="tab" aria-selected="true" data-plan-src="assets/plan-type.webp" data-plan-alt="Planta ilustrativa de apartamento tipo com três suítes" data-plan-label="Unidade tipo · Final 1"><span class="plan-choice__index">01</span><span class="plan-choice__body"><small>Apartamentos tipo</small><strong>2 ou 3 suítes</strong><em>92,04 m² — 110,84 m²</em></span><span aria-hidden="true">↗</span></button>
+            <button class="plan-choice" type="button" role="tab" aria-selected="false" data-plan-src="assets/plan-diferenciado.webp" data-plan-alt="Planta ilustrativa de apartamento diferenciado com área externa" data-plan-label="Diferenciado · unidade 701"><span class="plan-choice__index">02</span><span class="plan-choice__body"><small>Diferenciados</small><strong>Área externa privativa</strong><em>123,16 m² — 154,96 m²</em></span><span aria-hidden="true">↗</span></button>
+            <button class="plan-choice" type="button" role="tab" aria-selected="false" data-plan-src="assets/plan-duplex.webp" data-plan-alt="Planta ilustrativa de cobertura duplex com piscina privativa" data-plan-label="Cobertura duplex · Final 1"><span class="plan-choice__index">03</span><span class="plan-choice__body"><small>Coberturas duplex</small><strong>3 ou 4 suítes</strong><em>183,92 m² — 222,72 m²</em></span><span aria-hidden="true">↗</span></button>
+            <a class="plans__cta" data-whatsapp data-track="plans_whatsapp" data-location="residencias" target="_blank" rel="noopener">Receber todas as plantas no WhatsApp <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="lead">Arquitetura neoclássica, conforto contemporâneo e uma relação permanente com o mar. Um projeto de 20 pavimentos, com apenas 52 apartamentos.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card" data-reveal><span class="feature-icon">01</span><h3>Frente ao mar</h3><p>Endereço na Av. Beira Mar, com o oceano como paisagem cotidiana.</p></article>
-          <article class="feature-card" data-reveal><span class="feature-icon">02</span><h3>Arquitetura neoclássica</h3><p>Fachada marcante e hall com linguagem atemporal.</p></article>
-          <article class="feature-card" data-reveal><span class="feature-icon">03</span><h3>Borda infinita</h3><p>Piscina aquecida posicionada de frente para o mar.</p></article>
-          <article class="feature-card" data-reveal><span class="feature-icon">04</span><h3>796,78 m² de lazer</h3><p>Um pavimento inteiro com 14 ambientes entregues prontos.</p></article>
-          <article class="feature-card" data-reveal><span class="feature-icon">05</span><h3>Mar e serra</h3><p>Todos os apartamentos com vista para os dois horizontes.</p></article>
-          <article class="feature-card" data-reveal><span class="feature-icon">06</span><h3>Segurança inteligente</h3><p>Reconhecimento facial, câmeras e acessos controlados.</p></article>
-          <article class="feature-card" data-reveal><span class="feature-icon">07</span><h3>Acabamento superior</h3><p>Esquadrias em alumínio, piso vinílico e atenuação acústica.</p></article>
-          <article class="feature-card" data-reveal><span class="feature-icon">08</span><h3>Pronto para o futuro</h3><p>Infraestrutura para automação e carregamento veicular.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section section--white" id="plantas" aria-labelledby="plantas-title">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <div>
-            <p class="eyebrow">Apartamentos e plantas</p>
-            <h2 class="title title--medium" id="plantas-title">Escolha a forma de viver que combina com você.</h2>
-          </div>
-          <p class="lead">Layouts pensados para ampliar a convivência, integrar os ambientes e valorizar a paisagem.</p>
+    <section class="leisure section" aria-labelledby="leisure-title">
+      <div class="shell"><div class="section-heading" data-reveal><div><p class="kicker">Pavimento de lazer</p><h2 id="leisure-title">O mar como parte<br>da experiência.</h2></div><p>Um pavimento inteiro e 14 ambientes entregues mobiliados, equipados, decorados e climatizados.</p></div></div>
+      <div class="leisure__stage">
+        <figure class="leisure__hero" data-reveal><img src="assets/pool-alt.jpg" alt="Piscina aquecida com borda infinita diante do mar" loading="lazy"><figcaption><span>01</span><strong>Piscina aquecida<br>com borda infinita</strong></figcaption></figure>
+        <div class="leisure__rail">
+          <figure data-reveal><img src="assets/gym.jpg" alt="Academia equipada com vista para o mar" loading="lazy"><figcaption>Academia</figcaption></figure>
+          <figure data-reveal><img src="assets/party-alt.jpg" alt="Salão de festas decorado" loading="lazy"><figcaption>Salão de festas</figcaption></figure>
+          <figure data-reveal><img src="assets/spa-alt.jpg" alt="Spa com hidromassagem e vista para o mar" loading="lazy"><figcaption>Spa e sauna</figcaption></figure>
+          <figure data-reveal><img src="assets/games-alt.jpg" alt="Sala de jogos com vista para o mar" loading="lazy"><figcaption>Sala de jogos</figcaption></figure>
         </div>
+      </div>
+      <div class="shell leisure__names" aria-label="Outros espaços de lazer"><span>Sports bar</span><span>Wine garden</span><span>Brinquedoteca</span><span>Playground</span><span>Sala de poker</span><span>Gourmet da piscina</span></div>
+    </section>
 
-        <div class="residence-layout">
-          <div class="plan-stage" data-reveal>
-            <img src="assets/plan-type.webp" alt="Preview ilustrativo da planta de apartamento tipo com três suítes" loading="lazy">
-            <span class="plan-stamp">Preview de planta · unidade tipo</span>
-          </div>
-          <div class="unit-list">
-            <article class="unit-card is-active" data-reveal><small>Apartamentos tipo</small><h3>2 ou 3 suítes</h3><p>Living integrado, churrasqueira a carvão, hobby box e 2 vagas.</p><span class="metric">92,04 m² a 110,84 m²</span></article>
-            <article class="unit-card" data-reveal><small>Diferenciados</small><h3>Área externa privativa</h3><p>Unidades de 2 ou 3 suítes com espaço descoberto e 2 vagas.</p><span class="metric">123,16 m² a 154,96 m²</span></article>
-            <article class="unit-card" data-reveal><small>Coberturas duplex</small><h3>3 ou 4 suítes</h3><p>Piscina ou spa privativo, churrasqueira a carvão e até 4 vagas.</p><span class="metric">183,92 m² a 222,72 m²</span></article>
-            <a class="button button--dark button--full unit-cta" data-whatsapp data-track="plans_whatsapp" data-location="plantas" target="_blank" rel="noopener">Receba a planta completa no WhatsApp</a>
-          </div>
+    <section class="location" aria-labelledby="location-title">
+      <figure class="location__photo"><img src="assets/location.jpg" alt="Vista aérea da orla de Balneário Gaivota" loading="lazy"></figure>
+      <div class="location__content" data-reveal>
+        <p class="kicker kicker--light">Balneário Gaivota · SC</p><h2 id="location-title">O privilégio de morar diante do horizonte.</h2>
+        <p>Na Av. Beira Mar, com uma segunda frente para a Rua Minas Gerais. Praia, gastronomia e conveniências fazem parte da vizinhança.</p>
+        <ul><li>23 km de orla</li><li>Frente-mar</li><li>Natureza e tranquilidade</li></ul>
+        <figure class="location__map"><img src="assets/map.jpg" alt="Mapa com a localização do Mont Blanc Residence e pontos de interesse" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="progress section" aria-labelledby="progress-title">
+      <div class="shell progress__grid">
+        <div class="progress__title" data-reveal><p class="kicker">Obra em andamento</p><h2 id="progress-title">Um projeto que<br>ganha forma.</h2></div>
+        <div class="progress__number" data-reveal><strong data-progress>30%</strong><span>concluída</span></div>
+        <div class="progress__detail" data-reveal><div class="progress__bar" data-progress-bar role="progressbar" aria-label="Progresso total da obra" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"></div><div><span>Última atualização</span><strong>20 de agosto de 2026</strong></div><a class="editorial-link" data-whatsapp data-track="progress_whatsapp" data-location="obra" target="_blank" rel="noopener">Acompanhar e conhecer o projeto <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="faq section section--soft" aria-labelledby="faq-title">
+      <div class="shell faq__grid">
+        <div class="faq__intro" data-reveal><p class="kicker">Informações</p><h2 id="faq-title">Para decidir<br>com segurança.</h2><p>O registro de incorporação do Mont Blanc Residence é R5-92.105.</p></div>
+        <div class="faq__list">
+          <details data-reveal><summary>Quais são as opções de apartamentos?</summary><p>Apartamentos tipo de 2 ou 3 suítes, unidades diferenciadas com área externa e coberturas duplex de 3 ou 4 suítes.</p></details>
+          <details data-reveal><summary>Como recebo plantas e valores?</summary><p>Preencha o formulário ou fale pelo WhatsApp. Um consultor apresentará as opções disponíveis.</p></details>
+          <details data-reveal><summary>O empreendimento fica realmente frente ao mar?</summary><p>Sim. O Mont Blanc está diante da Av. Beira Mar, em Balneário Gaivota/SC.</p></details>
+          <details data-reveal><summary>Qual é a previsão de entrega?</summary><p>A previsão deve ser confirmada com a equipe comercial. A obra está 30% concluída, conforme atualização de 20 de agosto de 2026.</p></details>
+          <details data-reveal><summary>É possível agendar um atendimento?</summary><p>Sim. Solicite pelo WhatsApp ou deixe seus dados para que a equipe entre em contato.</p></details>
+          <details data-reveal><summary>Quais são os diferenciais de segurança?</summary><p>Reconhecimento facial, monitoramento por câmeras, guarita equipada e acessos de garagem controlados.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="section section--dark" aria-labelledby="lazer-title">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <div>
-            <p class="eyebrow">Experiência de lazer</p>
-            <h2 class="title title--medium" id="lazer-title">Um pavimento inteiro dedicado aos seus melhores momentos.</h2>
-          </div>
-          <p class="lead">Ambientes mobiliados, equipados, decorados e climatizados para viver bem em todas as estações.</p>
-        </div>
-        <div class="gallery" aria-label="Galeria das áreas de lazer">
-          <figure data-reveal><img src="assets/pool-infinity.jpg" alt="Piscina aquecida com borda infinita e vista para o mar" loading="lazy"><figcaption>Piscina aquecida com borda infinita</figcaption></figure>
-          <figure data-reveal><img src="assets/gym.jpg" alt="Academia equipada com vista para o mar e a cidade" loading="lazy"><figcaption>Academia</figcaption></figure>
-          <figure data-reveal><img src="assets/party.jpg" alt="Salão de festas com cozinha gourmet" loading="lazy"><figcaption>Salão de festas</figcaption></figure>
-          <figure data-reveal><img src="assets/sauna.jpg" alt="Área de spa com saunas e hidromassagem" loading="lazy"><figcaption>Spa e sauna</figcaption></figure>
-          <figure data-reveal><img src="assets/sports-bar.jpg" alt="Sports bar com televisores e churrasqueira" loading="lazy"><figcaption>Sports bar</figcaption></figure>
-        </div>
-        <div class="amenities" aria-label="Outros ambientes de lazer">
-          <span>Wine garden</span><span>Brinquedoteca</span><span>Sala de jogos</span><span>Sala de poker</span><span>Playground</span><span>Gourmet da piscina</span><span>Áreas de convivência</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="localizacao-title">
-      <div class="container location-grid" data-reveal>
-        <div class="location-copy">
-          <p class="eyebrow">Balneário Gaivota</p>
-          <h2 class="title" id="localizacao-title">Seu novo endereço entre o mar e a tranquilidade.</h2>
-          <p class="lead">Na Av. Beira Mar, com a praia à frente e as conveniências da cidade por perto.</p>
-          <ul><li>Frente para a Av. Beira Mar</li><li>Segunda frente para a Rua Minas Gerais</li><li>Praia, restaurantes e serviços no entorno</li><li>23 km de orla em Balneário Gaivota</li></ul>
-        </div>
-        <div class="location-visual">
-          <img src="assets/location.jpg" alt="Vista aérea da orla de Balneário Gaivota" loading="lazy">
-          <img class="map-inset" src="assets/map.jpg" alt="Mapa ilustrativo com a localização do Mont Blanc Residence e pontos de interesse" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--dark" aria-labelledby="obra-title">
-      <div class="container progress-layout">
-        <div class="progress-number" data-progress data-reveal>30%</div>
-        <div class="progress-copy" data-reveal>
-          <p class="eyebrow">Obra em andamento</p>
-          <h2 class="title" id="obra-title">O projeto ganha forma, etapa por etapa.</h2>
-          <p class="lead">Acompanhe a evolução da obra do Mont Blanc Residence com informações objetivas e atualizadas.</p>
-          <div class="progress-track" data-progress-bar role="progressbar" aria-label="Progresso total da obra" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"></div>
-          <div class="progress-meta"><strong><span data-progress>30%</span> concluída</strong><span>Última atualização: 20 de agosto de 2026</span></div>
-          <a class="button" data-whatsapp data-track="progress_whatsapp" data-location="obra" target="_blank" rel="noopener">Quero acompanhar e conhecer o projeto</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--white" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <div><p class="eyebrow">Perguntas frequentes</p><h2 class="title title--medium" id="faq-title">Informação para decidir com segurança.</h2></div>
-          <p class="lead">Se a sua dúvida não estiver aqui, fale diretamente com a equipe comercial.</p>
-        </div>
-        <div class="faq-list">
-          <details data-reveal><summary>Quais são as opções de apartamentos?</summary><p>Há apartamentos tipo de 2 ou 3 suítes, unidades diferenciadas com área externa e coberturas duplex de 3 ou 4 suítes.</p></details>
-          <details data-reveal><summary>Como recebo plantas e valores?</summary><p>Preencha um dos formulários desta página ou fale pelo WhatsApp. Um consultor apresentará as plantas e as opções comerciais disponíveis.</p></details>
-          <details data-reveal><summary>O empreendimento fica realmente frente ao mar?</summary><p>Sim. O Mont Blanc Residence possui frente para a Av. Beira Mar e uma segunda frente para a Rua Minas Gerais, em Balneário Gaivota/SC.</p></details>
-          <details data-reveal><summary>Qual é a previsão de entrega?</summary><p>A previsão de entrega deve ser confirmada com a equipe comercial. A obra está 30% concluída, conforme atualização de 20 de agosto de 2026.</p></details>
-          <details data-reveal><summary>É possível agendar uma visita ou atendimento?</summary><p>Sim. A equipe pode organizar atendimento e orientar sobre visitas. Solicite pelo WhatsApp ou deixe seus dados no formulário.</p></details>
-          <details data-reveal><summary>Quais são os diferenciais de segurança?</summary><p>O projeto prevê reconhecimento facial nas áreas comuns, monitoramento por câmeras, guarita equipada e acessos de garagem por tag e controle remoto.</p></details>
-          <details data-reveal><summary>O empreendimento possui registro de incorporação?</summary><p>Sim. Registro de Incorporação R5-92.105 do Ofício de Registro de Imóveis de Sombrio/SC.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section final-cta" aria-labelledby="final-title">
-      <div class="container final-grid">
-        <div data-reveal>
-          <p class="eyebrow">Mont Blanc Residence</p>
-          <h2 class="title" id="final-title">Conheça o Mont Blanc Residence por completo.</h2>
-          <p class="lead">Receba plantas, metragens e condições disponíveis em um atendimento personalizado.</p>
-        </div>
-        <form class="final-form" data-lead-form data-form-location="final" aria-label="Formulário para receber plantas e valores" data-reveal>
-          <div class="final-form-grid">
-            <div class="field"><label for="final-name">Nome</label><input id="final-name" name="name" type="text" autocomplete="name" required placeholder="Seu nome"></div>
-            <div class="field"><label for="final-phone">WhatsApp</label><input id="final-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required minlength="14" placeholder="(48) 99999-9999"></div>
-            <button class="button button--dark" type="submit" data-track="final_form_submit" data-location="final">Quero receber plantas e valores</button>
-          </div>
-          <p class="microcopy">Ao enviar, você solicita o contato de um consultor da GWP Empreendimentos.</p>
+    <section class="contact" aria-labelledby="contact-title">
+      <figure class="contact__photo"><img src="assets/facade-wide-2.webp" alt="Fachada do Mont Blanc Residence ao entardecer" loading="lazy"></figure>
+      <div class="contact__content" data-reveal>
+        <p class="kicker kicker--light">Atendimento exclusivo</p><h2 id="contact-title">Conheça o Mont Blanc por completo.</h2><p>Receba plantas, metragens e as opções disponíveis em um atendimento personalizado.</p>
+        <form class="contact-form" data-lead-form data-form-location="final" aria-label="Solicitar plantas e valores">
+          <div class="field field--dark"><label for="final-name">Nome</label><input id="final-name" name="name" type="text" autocomplete="name" required placeholder="Seu nome"></div>
+          <div class="field field--dark"><label for="final-phone">WhatsApp</label><input id="final-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required minlength="14" placeholder="(48) 99999-9999"></div>
+          <button class="contact-form__button" type="submit" data-track="final_form_submit" data-location="final">Receber plantas e valores <span aria-hidden="true">↗</span></button>
           <p class="form-status" data-form-status role="status" aria-live="polite" hidden></p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <img src="assets/gwp-logo.svg" alt="GWP Empreendimentos">
-      <p>Imagens meramente ilustrativas. Registro de Incorporação: R5-92.105 do Ofício de Registro de Imóveis de Sombrio/SC. Central de Vendas: Av. Beira Mar, 701, Balneário Gaivota/SC · <a data-phone-display href="tel:+5548991861320">(48) 99186-1320</a>.</p>
-    </div>
-  </footer>
+  <footer class="footer"><div class="shell footer__grid"><img src="assets/gwp-logo.svg" alt="GWP Empreendimentos"><p>Imagens meramente ilustrativas. Registro de Incorporação: R5-92.105 do Ofício de Registro de Imóveis de Sombrio/SC.</p><div><span>Central de vendas</span><a data-phone-display href="tel:+5548991861320">(48) 99186-1320</a></div></div></footer>
 
-  <a class="whatsapp-float" data-whatsapp data-track="floating_whatsapp" data-location="floating" target="_blank" rel="noopener" aria-label="Falar com um consultor pelo WhatsApp">
-    <span>Falar com um consultor</span>
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.04 21.5h-.01a9.46 9.46 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.46 9.46 0 1 1 8.03 4.43m8.05-17.55A11.3 11.3 0 0 0 12.05.62C5.8.62.72 5.7.72 11.95c0 2 .52 3.95 1.5 5.66L.63 23.38l5.9-1.55a11.32 11.32 0 0 0 5.51 1.4h.01c6.25 0 11.33-5.08 11.33-11.33 0-3.03-1.17-5.87-3.29-7.95"/></svg>
-  </a>
-
-  <script src="config.js"></script>
-  <script src="app.js"></script>
+  <a class="whatsapp-float" data-whatsapp data-track="floating_whatsapp" data-location="floating" target="_blank" rel="noopener" aria-label="Falar com um consultor pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.04 21.5h-.01a9.46 9.46 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.49-.23-.36a9.46 9.46 0 1 1 8.03 4.43m8.05-17.55A11.3 11.3 0 0 0 12.05.62C5.8.62.72 5.7.72 11.95c0 2 .52 3.95 1.5 5.66L.63 23.38l5.9-1.55a11.32 11.32 0 0 0 5.51 1.4h.01c6.25 0 11.33-5.08 11.33-11.33 0-3.03-1.17-5.87-3.29-7.95"/></svg></a>
+  <script src="config.js"></script><script src="app.js"></script>
 </body>
 </html>

@@ -81,7 +81,7 @@
       payload.createdAt = new Date().toISOString();
 
       button.disabled = true;
-      button.dataset.originalText = button.textContent;
+      button.dataset.originalHtml = button.innerHTML;
       button.textContent = "Registrando...";
       status.hidden = true;
 
@@ -103,8 +103,40 @@
         status.hidden = false;
       } finally {
         button.disabled = false;
-        button.textContent = button.dataset.originalText;
+        button.innerHTML = button.dataset.originalHtml;
       }
+    });
+  });
+
+  const header = document.querySelector("[data-header]");
+  if (header) {
+    const updateHeader = () => header.classList.toggle("is-scrolled", window.scrollY > 40);
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+  }
+
+  const planImage = document.querySelector("[data-plan-image]");
+  const planCaption = document.querySelector("[data-plan-caption]");
+  const planStage = planImage?.closest(".plans__visual");
+  document.querySelectorAll("[data-plan-src]").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!planImage || button.classList.contains("is-active")) return;
+
+      document.querySelectorAll("[data-plan-src]").forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-selected", String(active));
+      });
+
+      planStage?.classList.add("is-changing");
+      window.setTimeout(() => {
+        planImage.src = button.dataset.planSrc;
+        planImage.alt = button.dataset.planAlt || "Planta do Mont Blanc Residence";
+        if (planCaption) planCaption.textContent = button.dataset.planLabel || "Planta ilustrativa";
+        planStage?.classList.remove("is-changing");
+      }, 180);
+
+      track("plan_view", { plan_name: button.dataset.planLabel || "planta" });
     });
   });
 
