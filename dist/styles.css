@@ -118,12 +118,17 @@ figure { margin: 0; }
 .leisure-carousel__controls { display: flex; flex: 0 0 auto; margin-left: 30px; }
 .leisure-carousel__controls button { width: 58px; height: 58px; border: 1px solid rgba(255,255,255,.42); background: transparent; color: var(--white); cursor: pointer; font-size: 1rem; }
 .leisure-carousel__controls button + button { border-left: 0; }
-.leisure-carousel__thumbs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 8px; }
-.leisure-carousel__thumbs button { position: relative; height: 112px; overflow: hidden; border: 0; padding: 0; background: #182324; cursor: pointer; opacity: .48; transition: opacity 180ms ease; }
-.leisure-carousel__thumbs button.is-active, .leisure-carousel__thumbs button:hover { opacity: 1; }
-.leisure-carousel__thumbs button.is-active::after { content: ""; position: absolute; inset: 0; border: 2px solid var(--gold); }
-.leisure-carousel__thumbs img { height: 100%; object-fit: cover; }
-.leisure__names { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 48px; margin-top: 36px; color: var(--muted); font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; }
+.leisure-carousel__thumbs { display: flex; gap: 9px; margin-top: 9px; padding: 0 0 12px; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x proximity; scrollbar-color: var(--gold) #ddd8ce; scrollbar-width: thin; }
+.leisure-carousel__thumbs::-webkit-scrollbar { height: 6px; }
+.leisure-carousel__thumbs::-webkit-scrollbar-track { background: #ddd8ce; }
+.leisure-carousel__thumbs::-webkit-scrollbar-thumb { background: var(--gold); }
+.leisure-carousel__thumbs button { position: relative; flex: 0 0 190px; display: grid; grid-template-rows: 104px auto; overflow: hidden; border: 1px solid rgba(20,23,21,.12); padding: 0; background: var(--white); color: var(--ink); text-align: left; cursor: pointer; opacity: .62; scroll-snap-align: start; transition: opacity 180ms ease, border-color 180ms ease, transform 180ms ease; }
+.leisure-carousel__thumbs button.is-active, .leisure-carousel__thumbs button:hover { border-color: var(--gold); opacity: 1; transform: translateY(-2px); }
+.leisure-carousel__thumbs button.is-active::after { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: var(--gold); }
+.leisure-carousel__thumbs img { height: 104px; object-fit: cover; }
+.leisure-carousel__thumbs button > span { min-height: 62px; display: flex; flex-direction: column; justify-content: center; padding: 9px 12px 10px; }
+.leisure-carousel__thumbs strong { overflow: hidden; font: 500 .97rem/1.1 "Cormorant Garamond", Georgia, serif; text-overflow: ellipsis; white-space: nowrap; }
+.leisure-carousel__thumbs small { margin-top: 5px; color: var(--muted); font-size: .5rem; letter-spacing: .1em; text-transform: uppercase; }
 
 .location { display: grid; grid-template-columns: .86fr 1.14fr; min-height: 720px; background: var(--deep); color: var(--white); }
 .location__photo img { height: 100%; object-fit: cover; }
@@ -262,9 +267,10 @@ figure { margin: 0; }
   .leisure-carousel__caption strong { font-size: 2.25rem; }
   .leisure-carousel__controls { margin-left: 18px; }
   .leisure-carousel__controls button { width: 52px; height: 52px; }
-  .leisure-carousel__thumbs { display: flex; overflow-x: auto; }
-  .leisure-carousel__thumbs button { flex: 0 0 31%; height: 86px; }
-  .leisure__names { justify-content: flex-start; gap: 12px 24px; }
+  .leisure-carousel__thumbs { gap: 7px; }
+  .leisure-carousel__thumbs button { flex-basis: 148px; grid-template-rows: 82px auto; }
+  .leisure-carousel__thumbs img { height: 82px; }
+  .leisure-carousel__thumbs button > span { min-height: 58px; padding-inline: 10px; }
   .location { grid-template-columns: 1fr; }
   .location__photo { height: 390px; }
   .location__content { padding: 60px 22px 66px; }

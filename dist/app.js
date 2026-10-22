@@ -155,6 +155,11 @@
         thumb.classList.toggle("is-active", active);
         thumb.setAttribute("aria-current", active ? "true" : "false");
       });
+      thumbs[current]?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "nearest",
+        inline: "center"
+      });
       if (currentLabel) currentLabel.textContent = String(current + 1).padStart(2, "0");
       if (titleLabel) titleLabel.textContent = slides[current]?.dataset.title || "Lazer Mont Blanc";
       track("leisure_slide_view", { slide_name: slides[current]?.dataset.title || "lazer" });
