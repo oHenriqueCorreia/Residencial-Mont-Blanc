@@ -280,9 +280,9 @@ figure { margin: 0; }
   .topbar__right { gap: 16px; font-size: .6rem; }
   .topbar__right > span { display: none; }
   .text-link { gap: 8px; }
-  .hero { min-height: 900px; background-position: 33% center; }
-  .hero__shade { background: linear-gradient(0deg, rgba(5,16,22,.97) 0%, rgba(5,16,22,.74) 48%, rgba(5,16,22,.05) 82%); }
-  .hero__content { position: relative; inset: auto; width: auto; margin: 0; padding: 150px 15px 92px; }
+  .hero { min-height: 1120px; background-position: center top; background-size: auto 520px; }
+  .hero__shade { background: linear-gradient(180deg, rgba(5,16,22,0) 0%, rgba(5,16,22,.08) 25%, rgba(5,16,22,.76) 43%, #051016 53%, #051016 100%); }
+  .hero__content { position: relative; inset: auto; width: auto; margin: 0; padding: 440px 15px 120px; }
   .hero h1 { max-width: 520px; font-size: clamp(2.9rem, 13vw, 4.05rem); line-height: .88; }
   .hero__lead { margin: 17px 0 20px; font-size: .82rem; }
   .hero-form { gap: 13px; width: 100%; margin: 0; padding: 17px 20px 19px; }
@@ -375,7 +375,7 @@ figure { margin: 0; }
 }
 
 @media (max-width: 420px) {
-  .hero__content { padding-top: 138px; }
+  .hero__content { padding-top: 420px; }
   .hero h1 { font-size: clamp(2.75rem, 12.8vw, 3.35rem); }
   .hero__foot span { font-size: .47rem; letter-spacing: .08em; }
   .differentials-grid { grid-template-columns: 1fr; }
