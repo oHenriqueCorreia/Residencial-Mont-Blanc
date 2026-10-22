@@ -30,11 +30,11 @@
       <div class="hero__shade"></div>
       <div class="hero__content" data-reveal>
         <p class="kicker kicker--light">Mont Blanc Residence · Frente-mar</p>
-        <h1 id="hero-title">Apartamentos de<br>alto padrão<br>à beira-mar.</h1>
+        <h1 id="hero-title">Apartamentos de<br>alto padrão<span class="hero-rotator" data-rotator data-words='["à beira-mar.","com vista para o mar.","com exclusividade."]'>à beira-mar.</span></h1>
         <p class="hero__lead">De 92,04 m² a 222,72 m² · 2 a 4 suítes · Balneário Gaivota/SC.</p>
 
         <form class="hero-form" data-lead-form data-form-location="hero" aria-label="Receba plantas e valores">
-          <div class="hero-form__intro"><strong>Plantas e valores</strong><span>Atendimento personalizado pela GWP</span></div>
+          <div class="hero-form__intro"><strong>Receba plantas e valores</strong><span>Preencha seus dados para falar com um consultor GWP.</span></div>
           <div class="field field--line"><label for="hero-name">Nome</label><input id="hero-name" name="name" type="text" autocomplete="name" required placeholder="Seu nome"></div>
           <div class="field field--line"><label for="hero-phone">WhatsApp</label><input id="hero-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required minlength="14" placeholder="(48) 99999-9999"></div>
           <button class="arrow-button" type="submit" data-track="hero_form_submit" data-location="hero"><span>Quero plantas e valores</span><span aria-hidden="true">↗</span></button>
@@ -66,18 +66,18 @@
       </div>
     </section>
 
-    <section class="signature" aria-labelledby="signature-title">
+    <section class="signature" id="diferenciais" aria-labelledby="signature-title">
       <figure class="signature__image"><img src="assets/hall.jpg" alt="Hall do Mont Blanc Residence com acabamento neoclássico" loading="lazy"></figure>
       <div class="signature__panel" data-reveal>
         <p class="kicker">Diferenciais</p>
-        <h2 id="signature-title">Leitura rápida.<br>Valor evidente.</h2>
+        <h2 id="signature-title">Diferenciais que<br>elevam a experiência.</h2>
         <div class="differentials-grid">
-          <div class="differential"><span class="differential__icon" aria-hidden="true">≈</span><strong>Frente-mar</strong><small>O oceano como paisagem cotidiana</small></div>
-          <div class="differential"><span class="differential__icon" aria-hidden="true">◇</span><strong>Lazer completo</strong><small>796,78 m² e 14 ambientes</small></div>
-          <div class="differential"><span class="differential__icon" aria-hidden="true">⌂</span><strong>Coberturas duplex</strong><small>3 ou 4 suítes com piscina ou spa</small></div>
-          <div class="differential"><span class="differential__icon" aria-hidden="true">◎</span><strong>Segurança avançada</strong><small>Reconhecimento facial e câmeras</small></div>
-          <div class="differential"><span class="differential__icon" aria-hidden="true">✦</span><strong>Acabamento premium</strong><small>Conforto visual e acústico</small></div>
-          <div class="differential"><span class="differential__icon" aria-hidden="true">↯</span><strong>Pronto para o futuro</strong><small>Automação e veículo elétrico</small></div>
+          <div class="differential"><span class="differential__icon" aria-hidden="true">≈</span><strong>Frente-mar</strong><small>O horizonte presente em todos os dias.</small></div>
+          <div class="differential"><span class="differential__icon" aria-hidden="true">◇</span><strong>Lazer completo</strong><small>14 ambientes em um único pavimento.</small></div>
+          <div class="differential"><span class="differential__icon" aria-hidden="true">⌂</span><strong>Coberturas duplex</strong><small>3 ou 4 suítes, piscina ou spa privativo.</small></div>
+          <div class="differential"><span class="differential__icon" aria-hidden="true">◎</span><strong>Segurança inteligente</strong><small>Reconhecimento facial e acessos controlados.</small></div>
+          <div class="differential"><span class="differential__icon" aria-hidden="true">✦</span><strong>Conforto superior</strong><small>Acabamentos selecionados e atenuação acústica.</small></div>
+          <div class="differential"><span class="differential__icon" aria-hidden="true">↯</span><strong>Futuro preparado</strong><small>Automação e carregamento para veículo elétrico.</small></div>
         </div>
       </div>
     </section>
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <section class="leisure section" aria-labelledby="leisure-title">
+    <section class="leisure section" id="lazer" aria-labelledby="leisure-title">
       <div class="shell"><div class="section-heading" data-reveal><div><p class="kicker">Pavimento de lazer</p><h2 id="leisure-title">O mar como parte<br>da experiência.</h2></div><p>Um pavimento inteiro e 14 ambientes entregues mobiliados, equipados, decorados e climatizados.</p></div></div>
       <div class="leisure-carousel" data-carousel data-reveal>
         <div class="leisure-carousel__viewport" aria-live="polite">
@@ -110,10 +110,12 @@
           <figure class="leisure-slide" data-slide data-title="Spa e sauna"><img src="assets/spa-alt.jpg" alt="Spa com hidromassagem e vista para o mar" loading="lazy"></figure>
           <figure class="leisure-slide" data-slide data-title="Sala de jogos"><img src="assets/games-alt.jpg" alt="Sala de jogos com vista para o mar" loading="lazy"></figure>
         </div>
-        <div class="leisure-carousel__caption"><span><b data-carousel-current>01</b> / 05</span><strong data-carousel-title>Piscina com borda infinita</strong></div>
-        <div class="leisure-carousel__controls">
-          <button type="button" data-carousel-prev aria-label="Imagem anterior">←</button>
-          <button type="button" data-carousel-next aria-label="Próxima imagem">→</button>
+        <div class="leisure-carousel__meta">
+          <div class="leisure-carousel__caption"><span><b data-carousel-current>01</b> / 05</span><strong data-carousel-title>Piscina com borda infinita</strong></div>
+          <div class="leisure-carousel__controls">
+            <button type="button" data-carousel-prev aria-label="Imagem anterior">←</button>
+            <button type="button" data-carousel-next aria-label="Próxima imagem">→</button>
+          </div>
         </div>
         <div class="leisure-carousel__thumbs" aria-label="Selecionar ambiente de lazer">
           <button class="is-active" type="button" data-carousel-go="0" aria-label="Piscina com borda infinita"><img src="assets/pool-alt.jpg" alt=""></button>
@@ -126,11 +128,19 @@
       <div class="shell leisure__names" aria-label="Outros espaços de lazer"><span>Sports bar</span><span>Wine garden</span><span>Brinquedoteca</span><span>Playground</span><span>Sala de poker</span><span>Gourmet da piscina</span></div>
     </section>
 
-    <section class="progress section" aria-labelledby="progress-title">
-      <div class="shell progress__grid">
-        <div class="progress__title" data-reveal><p class="kicker">Obra em andamento</p><h2 id="progress-title">Um projeto que<br>ganha forma.</h2></div>
-        <div class="progress__number" data-reveal><strong data-progress>30%</strong><span>concluída</span></div>
-        <div class="progress__detail" data-reveal><div class="progress__bar" data-progress-bar role="progressbar" aria-label="Progresso total da obra" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"></div><div><span>Última atualização</span><strong>20 de agosto de 2026</strong></div><a class="editorial-link" data-whatsapp data-track="progress_whatsapp" data-location="obra" target="_blank" rel="noopener">Acompanhar e conhecer o projeto <span aria-hidden="true">↗</span></a></div>
+    <section class="progress section" id="obra" aria-labelledby="progress-title">
+      <div class="shell progress__layout">
+        <div class="progress__intro" data-reveal>
+          <p class="kicker">Obra em andamento</p>
+          <h2 id="progress-title">Transparência<br>em cada etapa.</h2>
+          <p>Acompanhe a evolução do Mont Blanc e veja um projeto excepcional ganhar forma diante do mar.</p>
+        </div>
+        <div class="progress-card" data-reveal>
+          <div class="progress-card__top"><span>Estágio total da obra</span><strong data-progress>30%</strong></div>
+          <div class="progress__bar" data-progress-bar role="progressbar" aria-label="Progresso total da obra" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"></div>
+          <div class="progress-card__meta"><span>Última atualização</span><strong>20 de agosto de 2026</strong></div>
+          <a class="editorial-link" data-whatsapp data-track="progress_whatsapp" data-location="obra" target="_blank" rel="noopener">Quero acompanhar o projeto <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
 

@@ -165,6 +165,22 @@
     thumbs.forEach((thumb) => thumb.addEventListener("click", () => showSlide(Number(thumb.dataset.carouselGo))));
   });
 
+  document.querySelectorAll("[data-rotator]").forEach((rotator) => {
+    let words = [];
+    try { words = JSON.parse(rotator.dataset.words || "[]"); } catch { words = []; }
+    if (words.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    let current = 0;
+    window.setInterval(() => {
+      rotator.classList.add("is-changing");
+      window.setTimeout(() => {
+        current = (current + 1) % words.length;
+        rotator.textContent = words[current];
+        rotator.classList.remove("is-changing");
+      }, 220);
+    }, 3400);
+  });
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
