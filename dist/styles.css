@@ -72,7 +72,7 @@ figure { margin: 0; }
 .intro__grid { display: grid; grid-template-columns: 100px .9fr .75fr; gap: 70px; align-items: center; }
 .intro__number { align-self: stretch; display: flex; flex-direction: column; align-items: center; gap: 20px; padding-top: 11px; color: #8c7452; font-size: .7rem; }
 .intro__number i { display: block; width: 1px; height: 100%; background: var(--line); }
-.intro__copy h2, .section-heading h2, .signature__panel h2, .location__content h2, .progress__title h2, .faq__intro h2, .contact__content h2 { margin: 0; font: 500 clamp(3.4rem, 5.6vw, 6rem)/.9 "Cormorant Garamond", Georgia, serif; letter-spacing: -.035em; }
+.intro__copy h2, .section-heading h2, .signature__panel h2, .location__content h2, .progress__title h2, .faq__intro h2, .contact__content h2 { margin: 0; font: 500 clamp(3.2rem, 4.7vw, 5.4rem)/.94 "Cormorant Garamond", Georgia, serif; letter-spacing: -.035em; }
 .intro__copy > p:not(.kicker) { max-width: 570px; margin: 36px 0; color: var(--muted); font-size: .96rem; font-weight: 300; }
 .intro__portrait { position: relative; width: 100%; max-width: 430px; justify-self: end; }
 .intro__portrait img { aspect-ratio: .82; object-fit: cover; }
@@ -180,7 +180,7 @@ figure { margin: 0; }
 
 .numbers__heading { display: grid; grid-template-columns: 1fr .7fr; gap: 70px; align-items: end; margin-bottom: 70px; }
 .numbers__heading .kicker { grid-column: 1 / -1; margin-bottom: -35px; }
-.numbers__heading h2 { margin: 0; font: 500 clamp(3.3rem, 5vw, 5.6rem)/.9 "Cormorant Garamond", Georgia, serif; }
+.numbers__heading h2 { margin: 0; font: 500 clamp(3.2rem, 4.7vw, 5.2rem)/.94 "Cormorant Garamond", Georgia, serif; letter-spacing: -.035em; }
 .numbers__heading > p:last-child { margin: 0 0 6px; color: rgba(255,255,255,.55); font-size: .82rem; }
 .numbers__grid { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid rgba(255,255,255,.2); border-left: 1px solid rgba(255,255,255,.2); }
 .numbers__grid div { min-height: 230px; display: flex; flex-direction: column; justify-content: flex-end; border-right: 1px solid rgba(255,255,255,.2); border-bottom: 1px solid rgba(255,255,255,.2); padding: 28px; }
@@ -190,7 +190,7 @@ figure { margin: 0; }
 
 .progress { background: #ece8df; }
 .progress__layout { display: grid; grid-template-columns: minmax(0, .82fr) minmax(460px, 1.18fr); gap: clamp(52px, 7vw, 104px); align-items: center; }
-.progress__intro h2 { margin: 0; font: 500 clamp(3.5rem, 5vw, 5.6rem)/.88 "Cormorant Garamond", Georgia, serif; letter-spacing: -.035em; }
+.progress__intro h2 { margin: 0; font: 500 clamp(3.2rem, 4.7vw, 5.2rem)/.94 "Cormorant Garamond", Georgia, serif; letter-spacing: -.035em; }
 .progress__intro > p:last-child { max-width: 490px; margin: 30px 0 0; color: var(--muted); font-size: .88rem; font-weight: 300; }
 .progress-card { border: 1px solid rgba(20,23,21,.12); padding: clamp(32px, 4vw, 54px); background: rgba(255,255,255,.66); box-shadow: 0 28px 80px rgba(39,35,28,.08); }
 .progress-card__top { display: grid; grid-template-columns: minmax(150px, 1fr) auto; align-items: end; gap: 28px; margin-bottom: 32px; }
@@ -274,16 +274,17 @@ figure { margin: 0; }
 
 @media (max-width: 760px) {
   :root { --shell: min(100% - 30px, 1220px); }
-  .section { padding: 78px 0; }
+  .section { padding: clamp(60px, 9vw, 76px) 0; }
   .topbar { height: 72px; padding: 0 18px; }
   .topbar__brand img { width: 112px; }
   .topbar__right { gap: 16px; font-size: .6rem; }
   .topbar__right > span { display: none; }
   .text-link { gap: 8px; }
-  .hero { min-height: 1120px; background-position: center top; background-size: auto 520px; }
+  .hero { min-height: 1120px; background-position: 38% top; background-size: auto 520px; }
   .hero__shade { background: linear-gradient(180deg, rgba(5,16,22,0) 0%, rgba(5,16,22,.08) 25%, rgba(5,16,22,.76) 43%, #051016 53%, #051016 100%); }
+  .hero__shade::after { position: absolute; top: 350px; right: 0; left: 0; height: 190px; background: rgba(5,16,22,.2); content: ""; pointer-events: none; -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); -webkit-mask-image: linear-gradient(180deg, transparent, #000 55%); mask-image: linear-gradient(180deg, transparent, #000 55%); }
   .hero__content { position: relative; inset: auto; width: auto; margin: 0; padding: 440px 15px 120px; }
-  .hero h1 { max-width: 520px; font-size: clamp(2.9rem, 13vw, 4.05rem); line-height: .88; }
+  .hero h1 { max-width: 520px; font-size: clamp(2.55rem, 10.5vw, 3.25rem); line-height: .94; }
   .hero__lead { margin: 17px 0 20px; font-size: .82rem; }
   .hero-form { gap: 13px; width: 100%; margin: 0; padding: 17px 20px 19px; }
   .hero-form__intro strong { font-size: 1.4rem; }
@@ -297,10 +298,12 @@ figure { margin: 0; }
   .authority__item { min-height: 120px; }
   .authority__item:nth-child(3) { border-right: 0; }
   .authority__item:last-child { grid-column: 1 / -1; min-height: 100px; }
-  .intro__grid { grid-template-columns: 1fr; gap: 45px; }
+  .intro__grid { grid-template-columns: 1fr; gap: 32px; }
   .intro__number { display: none; }
   .intro__portrait { max-width: none; }
-  .intro__copy h2, .section-heading h2, .signature__panel h2, .faq__intro h2 { font-size: clamp(3rem, 15vw, 4.6rem); }
+  .intro__copy h2, .section-heading h2, .signature__panel h2, .location__content h2, .numbers__heading h2, .progress__intro h2, .faq__intro h2, .contact__content h2 { font-size: clamp(2.35rem, 9vw, 3.2rem); line-height: 1.02; letter-spacing: -.025em; }
+  .residences .section-heading h2 { font-size: clamp(2.35rem, 9vw, 3.2rem); }
+  .kicker { margin-bottom: 15px; }
   .signature-gallery { grid-template-rows: 350px auto auto; }
   .signature-gallery__stage { min-height: 350px; }
   .signature-slide--plan { padding: 14px; }
@@ -314,9 +317,8 @@ figure { margin: 0; }
   .signature__panel { padding: 60px 22px; }
   .differentials-grid { grid-template-columns: 1fr 1fr; }
   .differential { min-height: 132px; padding: 16px; }
-  .section-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 42px; }
-  .residences .section-heading { grid-template-columns: 1fr; gap: 18px; margin-bottom: 42px; }
-  .residences .section-heading h2 { font-size: clamp(3rem, 15vw, 4.6rem); }
+  .section-heading { grid-template-columns: 1fr; gap: 15px; margin-bottom: 32px; }
+  .residences .section-heading { grid-template-columns: 1fr; gap: 15px; margin-bottom: 32px; }
   .plans__visual { min-height: 350px; }
   .plans__choices { grid-template-columns: 1fr; }
   .plans__visual { padding-bottom: 64px; }
@@ -341,21 +343,19 @@ figure { margin: 0; }
   .location { grid-template-columns: 1fr; }
   .location__photo { height: clamp(260px, 70vw, 360px); }
   .location__content { padding: 60px 22px 66px; }
-  .location__content h2 { font-size: clamp(2.85rem, 12vw, 3.75rem); }
-  .location__content > p:not(.kicker) { margin: 22px 0; }
+  .location__content > p:not(.kicker) { margin: 18px 0; }
   .location__content ul { width: min(100%, 520px); grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 10px; font-size: .56rem; line-height: 1.5; }
   .location__content li { justify-content: center; gap: 7px; }
   .location__map { height: auto; border-width: 5px; }
   .location__map img { height: auto; max-height: none; object-fit: contain; }
   .location__cta { margin-bottom: 22px; }
   .leisure__cta-wrap, .numbers__cta { justify-content: flex-start; }
-  .numbers__heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 42px; }
+  .numbers__heading { grid-template-columns: 1fr; gap: 14px; margin-bottom: 32px; }
   .numbers__heading .kicker { grid-column: auto; margin-bottom: 0; }
   .numbers__grid { grid-template-columns: 1fr 1fr; }
   .numbers__grid div { min-height: 160px; padding: 20px; }
   .numbers__grid div:last-child { grid-column: 1 / -1; }
-  .progress__layout, .faq__grid { grid-template-columns: 1fr; gap: 52px; }
-  .progress__intro h2 { font-size: clamp(3.4rem, 16vw, 4.8rem); }
+  .progress__layout, .faq__grid { grid-template-columns: 1fr; gap: 36px; }
   .progress-card { padding: 28px 22px 32px; }
   .progress-card__top { grid-template-columns: 1fr; align-items: start; gap: 14px; }
   .progress-card__top span { padding-bottom: 0; }
@@ -367,8 +367,7 @@ figure { margin: 0; }
   .contact { grid-template-columns: 1fr; }
   .contact__photo { height: 400px; }
   .contact__content { padding: 60px 22px 66px; }
-  .contact__content h2 { font-size: clamp(2.85rem, 12vw, 3.75rem); }
-  .contact__content > p:not(.kicker) { margin: 22px 0 34px; }
+  .contact__content > p:not(.kicker) { margin: 18px 0 28px; }
   .contact-form { grid-template-columns: 1fr; }
   .contact-form__button, .contact-form .form-status { grid-column: auto; }
   .footer__grid { grid-template-columns: 1fr; gap: 25px; }
@@ -376,7 +375,7 @@ figure { margin: 0; }
 
 @media (max-width: 420px) {
   .hero__content { padding-top: 420px; }
-  .hero h1 { font-size: clamp(2.75rem, 12.8vw, 3.35rem); }
+  .hero h1 { font-size: clamp(2.45rem, 10.5vw, 2.9rem); }
   .hero__foot span { font-size: .47rem; letter-spacing: .08em; }
   .differentials-grid { grid-template-columns: 1fr; }
   .differential { min-height: 108px; }
