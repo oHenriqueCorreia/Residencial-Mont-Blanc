@@ -140,6 +140,31 @@
     });
   });
 
+  document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+    const slides = Array.from(carousel.querySelectorAll("[data-slide]"));
+    const thumbs = Array.from(carousel.querySelectorAll("[data-carousel-go]"));
+    const currentLabel = carousel.querySelector("[data-carousel-current]");
+    const titleLabel = carousel.querySelector("[data-carousel-title]");
+    let current = 0;
+
+    const showSlide = (index) => {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => slide.classList.toggle("is-active", slideIndex === current));
+      thumbs.forEach((thumb, thumbIndex) => {
+        const active = thumbIndex === current;
+        thumb.classList.toggle("is-active", active);
+        thumb.setAttribute("aria-current", active ? "true" : "false");
+      });
+      if (currentLabel) currentLabel.textContent = String(current + 1).padStart(2, "0");
+      if (titleLabel) titleLabel.textContent = slides[current]?.dataset.title || "Lazer Mont Blanc";
+      track("leisure_slide_view", { slide_name: slides[current]?.dataset.title || "lazer" });
+    };
+
+    carousel.querySelector("[data-carousel-prev]")?.addEventListener("click", () => showSlide(current - 1));
+    carousel.querySelector("[data-carousel-next]")?.addEventListener("click", () => showSlide(current + 1));
+    thumbs.forEach((thumb) => thumb.addEventListener("click", () => showSlide(Number(thumb.dataset.carouselGo))));
+  });
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
