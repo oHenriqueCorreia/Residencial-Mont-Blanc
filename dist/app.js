@@ -118,6 +118,24 @@
   const planImage = document.querySelector("[data-plan-image]");
   const planCaption = document.querySelector("[data-plan-caption]");
   const planStage = planImage?.closest(".plans__visual");
+  const coverageThumbs = planStage?.querySelector("[data-coverage-thumbs]");
+  const coverageChoices = Array.from(coverageThumbs?.querySelectorAll("[data-coverage-src]") || []);
+
+  coverageChoices.forEach((choice) => {
+    choice.addEventListener("click", () => {
+      coverageChoices.forEach((item) => item.classList.toggle("is-active", item === choice));
+      planStage?.classList.add("is-changing");
+      window.setTimeout(() => {
+        if (planImage) {
+          planImage.src = choice.dataset.coverageSrc;
+          planImage.alt = choice.dataset.coverageAlt || "Imagem da cobertura duplex";
+        }
+        if (planCaption) planCaption.textContent = choice.dataset.coverageLabel || "Cobertura duplex";
+        planStage?.classList.remove("is-changing");
+      }, 180);
+    });
+  });
+
   document.querySelectorAll("[data-plan-src]").forEach((button) => {
     button.addEventListener("click", () => {
       if (!planImage || button.classList.contains("is-active")) return;
@@ -130,9 +148,19 @@
 
       planStage?.classList.add("is-changing");
       window.setTimeout(() => {
-        planImage.src = button.dataset.planSrc;
-        planImage.alt = button.dataset.planAlt || "Planta do Mont Blanc Residence";
-        if (planCaption) planCaption.textContent = button.dataset.planLabel || "Planta ilustrativa";
+        const showCoverageGallery = button.dataset.planGallery === "coverage";
+        if (coverageThumbs) coverageThumbs.hidden = !showCoverageGallery;
+        planStage?.classList.toggle("has-coverage-gallery", showCoverageGallery);
+        if (showCoverageGallery && coverageChoices[0]) {
+          coverageChoices.forEach((item, index) => item.classList.toggle("is-active", index === 0));
+          planImage.src = coverageChoices[0].dataset.coverageSrc;
+          planImage.alt = coverageChoices[0].dataset.coverageAlt || "Imagem da cobertura duplex";
+          if (planCaption) planCaption.textContent = coverageChoices[0].dataset.coverageLabel || "Cobertura duplex";
+        } else {
+          planImage.src = button.dataset.planSrc;
+          planImage.alt = button.dataset.planAlt || "Planta do Mont Blanc Residence";
+          if (planCaption) planCaption.textContent = button.dataset.planLabel || "Planta ilustrativa";
+        }
         planStage?.classList.remove("is-changing");
       }, 180);
 

@@ -67,7 +67,32 @@
     </section>
 
     <section class="signature" id="diferenciais" aria-labelledby="signature-title">
-      <figure class="signature__image"><img src="assets/hall.jpg" alt="Hall do Mont Blanc Residence com acabamento neoclássico" loading="lazy" decoding="async"></figure>
+      <div class="signature-gallery" data-carousel data-reveal aria-label="Galeria de interiores e plantas dos apartamentos">
+        <div class="signature-gallery__stage" aria-live="polite">
+          <figure class="signature-slide is-active" data-slide data-title="Suíte com vista para o mar"><img src="assets/apartment-01-suite.webp" alt="Suíte do Mont Blanc Residence com vista para o mar" loading="lazy" decoding="async"></figure>
+          <figure class="signature-slide" data-slide data-title="Varanda frente-mar"><img src="assets/apartment-02-varanda.webp" alt="Varanda do apartamento com churrasqueira e vista para o mar" loading="lazy" decoding="async"></figure>
+          <figure class="signature-slide" data-slide data-title="Cozinha integrada à paisagem"><img src="assets/apartment-03-cozinha.webp" alt="Cozinha integrada com vista panorâmica para o mar" loading="lazy" decoding="async"></figure>
+          <figure class="signature-slide" data-slide data-title="Living e convivência"><img src="assets/apartment-04-living.webp" alt="Living e cozinha do apartamento integrados à varanda" loading="lazy" decoding="async"></figure>
+          <figure class="signature-slide signature-slide--plan" data-slide data-title="Final 01 · 110,84 m² · 3 suítes"><img src="assets/apartment-plan-final-01.webp" alt="Planta do apartamento final 01 com 110,84 metros quadrados e três suítes, sendo duas demi-suítes" loading="lazy" decoding="async"></figure>
+          <figure class="signature-slide signature-slide--plan" data-slide data-title="Final 02 · 95,92 m² · 2 suítes"><img src="assets/apartment-plan-final-02.webp" alt="Planta do apartamento final 02 com 95,92 metros quadrados e duas suítes" loading="lazy" decoding="async"></figure>
+          <figure class="signature-slide signature-slide--plan" data-slide data-title="Final 03 · 92,04 m² · 2 suítes"><img src="assets/apartment-plan-final-03.webp" alt="Planta do apartamento final 03 com 92,04 metros quadrados e duas suítes" loading="lazy" decoding="async"></figure>
+          <figure class="signature-slide signature-slide--plan" data-slide data-title="Final 04 · 92,55 m² · 2 suítes"><img src="assets/apartment-plan-final-04.webp" alt="Planta do apartamento final 04 com 92,55 metros quadrados e duas suítes" loading="lazy" decoding="async"></figure>
+        </div>
+        <div class="signature-gallery__meta">
+          <div class="signature-gallery__caption"><span><b data-carousel-current>01</b> / 08</span><strong data-carousel-title>Suíte com vista para o mar</strong></div>
+          <div class="signature-gallery__controls" aria-label="Controles da galeria"><button type="button" data-carousel-prev aria-label="Imagem anterior">←</button><button type="button" data-carousel-next aria-label="Próxima imagem">→</button></div>
+        </div>
+        <div class="signature-gallery__thumbs" role="tablist" aria-label="Escolha uma imagem da galeria">
+          <button class="is-active" type="button" data-carousel-go="0" role="tab" aria-selected="true"><img src="assets/apartment-01-suite.webp" alt="" loading="lazy"><span>Suíte</span></button>
+          <button type="button" data-carousel-go="1" role="tab" aria-selected="false"><img src="assets/apartment-02-varanda.webp" alt="" loading="lazy"><span>Varanda</span></button>
+          <button type="button" data-carousel-go="2" role="tab" aria-selected="false"><img src="assets/apartment-03-cozinha.webp" alt="" loading="lazy"><span>Cozinha</span></button>
+          <button type="button" data-carousel-go="3" role="tab" aria-selected="false"><img src="assets/apartment-04-living.webp" alt="" loading="lazy"><span>Living</span></button>
+          <button type="button" data-carousel-go="4" role="tab" aria-selected="false"><img src="assets/apartment-plan-final-01.webp" alt="" loading="lazy"><span>Final 01</span></button>
+          <button type="button" data-carousel-go="5" role="tab" aria-selected="false"><img src="assets/apartment-plan-final-02.webp" alt="" loading="lazy"><span>Final 02</span></button>
+          <button type="button" data-carousel-go="6" role="tab" aria-selected="false"><img src="assets/apartment-plan-final-03.webp" alt="" loading="lazy"><span>Final 03</span></button>
+          <button type="button" data-carousel-go="7" role="tab" aria-selected="false"><img src="assets/apartment-plan-final-04.webp" alt="" loading="lazy"><span>Final 04</span></button>
+        </div>
+      </div>
       <div class="signature__panel" data-reveal>
         <p class="kicker">Diferenciais</p>
         <h2 id="signature-title">Diferenciais que<br>elevam a experiência.</h2>
@@ -79,6 +104,7 @@
           <div class="differential"><span class="differential__icon" aria-hidden="true">✦</span><strong>Conforto superior</strong><small>Acabamentos selecionados e atenuação acústica.</small></div>
           <div class="differential"><span class="differential__icon" aria-hidden="true">↯</span><strong>Futuro preparado</strong><small>Automação e carregamento para veículo elétrico.</small></div>
         </div>
+        <a class="editorial-link" data-whatsapp data-track="signature_whatsapp" data-location="diferenciais" target="_blank" rel="noopener">Agendar uma apresentação <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
@@ -89,11 +115,23 @@
           <p>Plantas que equilibram privacidade e convivência, com living integrado, churrasqueira a carvão, hobby box e duas ou mais vagas de garagem.</p>
         </div>
         <div class="plans">
-          <div class="plans__visual" data-reveal><img src="assets/plan-type.webp" alt="Planta ilustrativa de apartamento tipo com três suítes" data-plan-image loading="lazy"><span data-plan-caption>Unidade tipo · Final 1</span></div>
+          <div class="plans__visual" data-reveal>
+            <img src="assets/plan-type.webp" alt="Planta ilustrativa de apartamento tipo com três suítes" data-plan-image loading="lazy" decoding="async">
+            <span data-plan-caption>Unidade tipo · Final 1</span>
+            <div class="coverage-thumbs" data-coverage-thumbs aria-label="Perspectivas e plantas das coberturas duplex" hidden>
+              <button class="is-active" type="button" data-coverage-src="assets/residence-view-01.webp" data-coverage-alt="Suíte ampla com vista para o mar" data-coverage-label="Perspectiva · Suíte"><img src="assets/residence-view-01.webp" alt="" loading="lazy"><span>Suíte</span></button>
+              <button type="button" data-coverage-src="assets/residence-view-02.webp" data-coverage-alt="Lounge e piscina privativa com vista para o litoral" data-coverage-label="Perspectiva · Lounge e piscina"><img src="assets/residence-view-02.webp" alt="" loading="lazy"><span>Lounge</span></button>
+              <button type="button" data-coverage-src="assets/residence-view-03.webp" data-coverage-alt="Living integrado à piscina privativa e à cozinha" data-coverage-label="Perspectiva · Living e piscina"><img src="assets/residence-view-03.webp" alt="" loading="lazy"><span>Living</span></button>
+              <button type="button" data-coverage-src="assets/coverage-1901.webp" data-coverage-alt="Planta duplex da cobertura final 01, com quatro suítes, sendo duas demi" data-coverage-label="Final 01 · 222,72 m² · 4 suítes, sendo 2 demi"><img src="assets/coverage-1901.webp" alt="" loading="lazy"><span>Final 01</span></button>
+              <button type="button" data-coverage-src="assets/coverage-1902.webp" data-coverage-alt="Planta duplex da cobertura final 02, com três suítes" data-coverage-label="Final 02 · 188,02 m² · 3 suítes"><img src="assets/coverage-1902.webp" alt="" loading="lazy"><span>Final 02</span></button>
+              <button type="button" data-coverage-src="assets/coverage-1903.webp" data-coverage-alt="Planta duplex da cobertura final 03, com três suítes" data-coverage-label="Final 03 · 183,92 m² · 3 suítes"><img src="assets/coverage-1903.webp" alt="" loading="lazy"><span>Final 03</span></button>
+              <button type="button" data-coverage-src="assets/coverage-1904.webp" data-coverage-alt="Planta duplex da cobertura final 04, com três suítes" data-coverage-label="Final 04 · 185,32 m² · 3 suítes"><img src="assets/coverage-1904.webp" alt="" loading="lazy"><span>Final 04</span></button>
+            </div>
+          </div>
           <div class="plans__choices" role="tablist" aria-label="Categorias de plantas">
             <button class="plan-choice is-active" type="button" role="tab" aria-selected="true" data-plan-src="assets/plan-type.webp" data-plan-alt="Planta ilustrativa de apartamento tipo com três suítes" data-plan-label="Unidade tipo · Final 1"><span class="plan-choice__index">01</span><span class="plan-choice__body"><small>Apartamentos tipo</small><strong>2 ou 3 suítes</strong><em>92,04 m² — 110,84 m²</em></span><span aria-hidden="true">↗</span></button>
             <button class="plan-choice" type="button" role="tab" aria-selected="false" data-plan-src="assets/plan-diferenciado.webp" data-plan-alt="Planta ilustrativa de apartamento diferenciado com área externa" data-plan-label="Diferenciado · unidade 701"><span class="plan-choice__index">02</span><span class="plan-choice__body"><small>Diferenciados</small><strong>Área externa privativa</strong><em>123,16 m² — 154,96 m²</em></span><span aria-hidden="true">↗</span></button>
-            <button class="plan-choice" type="button" role="tab" aria-selected="false" data-plan-src="assets/plan-duplex.webp" data-plan-alt="Planta ilustrativa de cobertura duplex com piscina privativa" data-plan-label="Cobertura duplex · Final 1"><span class="plan-choice__index">03</span><span class="plan-choice__body"><small>Coberturas duplex</small><strong>3 ou 4 suítes</strong><em>183,92 m² — 222,72 m²</em></span><span aria-hidden="true">↗</span></button>
+            <button class="plan-choice" type="button" role="tab" aria-selected="false" data-plan-src="assets/plan-duplex.webp" data-plan-alt="Planta ilustrativa de cobertura duplex com piscina privativa" data-plan-label="Cobertura duplex · Final 1" data-plan-gallery="coverage"><span class="plan-choice__index">03</span><span class="plan-choice__body"><small>Coberturas duplex</small><strong>3 ou 4 suítes</strong><em>183,92 m² — 222,72 m²</em></span><span aria-hidden="true">↗</span></button>
             <a class="plans__cta" data-whatsapp data-track="plans_whatsapp" data-location="residencias" target="_blank" rel="noopener">Receber todas as plantas no WhatsApp <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -149,6 +187,7 @@
           <button type="button" data-carousel-go="16" aria-label="Sports bar"><img src="assets/leisure-17-sports-bar.jpg" alt=""><span><strong>Sports bar</strong><small>Convivência</small></span></button>
         </div>
       </div>
+      <div class="shell leisure__cta-wrap"><a class="editorial-link" data-whatsapp data-track="leisure_whatsapp" data-location="lazer" target="_blank" rel="noopener">Quero conhecer os espaços de lazer <span aria-hidden="true">↗</span></a></div>
     </section>
 
     <section class="progress section" id="obra" aria-labelledby="progress-title">
@@ -167,12 +206,14 @@
       </div>
     </section>
 
-    <section class="location" aria-labelledby="location-title">
+    <section class="location" id="localizacao" aria-labelledby="location-title">
       <figure class="location__photo"><img src="assets/location.jpg" alt="Vista aérea da orla de Balneário Gaivota" loading="lazy" decoding="async"></figure>
       <div class="location__content" data-reveal>
-        <p class="kicker kicker--light">Localização estratégica</p><h2 id="location-title">O privilégio de morar diante do horizonte.</h2>
-        <p>Na Av. Beira Mar, com uma segunda frente para a Rua Minas Gerais. Praia, gastronomia e serviços fazem parte da vizinhança.</p>
-        <ul><li>23 km de orla</li><li>Frente-mar</li><li>Restaurantes próximos</li><li>Serviços e conveniências</li></ul>
+        <p class="kicker kicker--light">Localização estratégica</p>
+        <h2 id="location-title">O privilégio de morar diante do horizonte.</h2>
+        <p class="location__description">Na Av. Beira Mar, com uma segunda frente para a Rua Minas Gerais. Praia, gastronomia e serviços fazem parte da vizinhança.</p>
+        <ul aria-label="Destaques da localização"><li>23 km de orla</li><li>Frente-mar</li><li>Restaurantes próximos</li><li>Serviços e conveniências</li></ul>
+        <a class="editorial-link editorial-link--light location__cta" data-whatsapp data-track="location_whatsapp" data-location="localizacao" target="_blank" rel="noopener">Conversar sobre a região <span aria-hidden="true">↗</span></a>
         <figure class="location__map"><img src="assets/map.jpg" alt="Mapa com a localização do Mont Blanc Residence e pontos de interesse, restaurantes, supermercado e acesso à BR-101" loading="lazy" decoding="async"></figure>
       </div>
     </section>
@@ -187,6 +228,7 @@
           <div data-reveal><strong>796,78</strong><span>m² de lazer</span></div>
           <div data-reveal><strong>30%</strong><span>da obra concluída</span></div>
         </div>
+        <div class="numbers__cta"><a class="editorial-link editorial-link--light" data-whatsapp data-track="numbers_whatsapp" data-location="numeros" target="_blank" rel="noopener">Receber apresentação completa <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
@@ -203,6 +245,7 @@
           <details data-reveal><summary>Quais são os diferenciais de segurança?</summary><p>Reconhecimento facial, monitoramento por câmeras, guarita equipada e acessos de garagem controlados.</p></details>
           <details data-reveal><summary>Quais documentos são necessários para a compra?</summary><p>A documentação pode variar conforme a forma de aquisição. O consultor orientará a relação necessária para a análise e formalização da proposta.</p></details>
           <details data-reveal><summary>O empreendimento possui registro de incorporação?</summary><p>Sim. Registro de Incorporação R5-92.105 do Ofício de Registro de Imóveis de Sombrio/SC.</p></details>
+          <a class="editorial-link faq__cta" data-whatsapp data-track="faq_whatsapp" data-location="faq" target="_blank" rel="noopener">Falar com um consultor <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>

@@ -1,8 +1,17 @@
-# Landing page Mont Blanc Residence
+# Mont Blanc Residence
 
-Landing page estática, responsiva e preparada para publicação no Sites.
+Landing page estática e responsiva do empreendimento Mont Blanc Residence, preparada para publicação em hospedagem de sites estáticos.
 
-## Executar localmente
+## Estrutura do projeto
+
+- `.openai/hosting.json`: configuração de hospedagem com a pasta publicada em `dist`.
+- `dist/index.html`: conteúdo e estrutura da página.
+- `dist/styles.css`: identidade visual e layouts responsivos.
+- `dist/app.js`: interações, formulários, rastreamento e links de contato.
+- `dist/config.js`: dados comerciais configuráveis.
+- `dist/assets/`: imagens, plantas, logotipos e ícones utilizados pelo site.
+
+## Visualizar localmente
 
 No diretório do projeto, inicie qualquer servidor HTTP apontando para `dist`. Por exemplo:
 
@@ -10,7 +19,7 @@ No diretório do projeto, inicie qualquer servidor HTTP apontando para `dist`. P
 npx --yes serve dist
 ```
 
-Depois, abra o endereço local exibido no terminal.
+Depois, abra o endereço local exibido no terminal. A página inicial está em `dist/index.html`.
 
 ## Configuração comercial
 
