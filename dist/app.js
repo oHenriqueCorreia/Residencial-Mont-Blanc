@@ -203,14 +203,26 @@
     try { words = JSON.parse(rotator.dataset.words || "[]"); } catch { words = []; }
     if (words.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
+    // Todas as frases ficam empilhadas na mesma célula: a altura é sempre a da mais longa.
+    const items = words.map((word, index) => {
+      const item = document.createElement("span");
+      item.className = "hero-rotator__item";
+      item.textContent = word;
+      if (index === 0) item.classList.add("is-active");
+      else item.setAttribute("aria-hidden", "true");
+      return item;
+    });
+    rotator.textContent = "";
+    rotator.classList.add("is-stacked");
+    items.forEach((item) => rotator.appendChild(item));
+
     let current = 0;
     window.setInterval(() => {
-      rotator.classList.add("is-changing");
-      window.setTimeout(() => {
-        current = (current + 1) % words.length;
-        rotator.textContent = words[current];
-        rotator.classList.remove("is-changing");
-      }, 220);
+      items[current].classList.remove("is-active");
+      items[current].setAttribute("aria-hidden", "true");
+      current = (current + 1) % items.length;
+      items[current].classList.add("is-active");
+      items[current].removeAttribute("aria-hidden");
     }, 3400);
   });
 

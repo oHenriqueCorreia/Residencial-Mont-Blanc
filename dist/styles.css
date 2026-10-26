@@ -43,10 +43,13 @@ figure { margin: 0; }
 
 .hero { position: relative; min-height: max(100svh, 880px); overflow: hidden; background: #18323d url("assets/official-hero.webp") center center / cover no-repeat; color: var(--white); }
 .hero__shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(6,19,25,.06) 25%, rgba(6,19,25,.16) 45%, rgba(6,19,25,.78) 100%), linear-gradient(0deg, rgba(5,16,22,.7), transparent 42%); }
-.hero__content { position: relative; z-index: 1; width: min(540px, 38vw); margin-left: 57vw; margin-right: auto; padding-top: clamp(118px, 12vh, 150px); }
-.hero h1 { max-width: 590px; margin: 0; font: 500 clamp(3.35rem, 4.45vw, 5rem)/.86 "Cormorant Garamond", Georgia, serif; letter-spacing: -.04em; }
+.hero__content { position: relative; z-index: 1; width: min(620px, 40vw); margin-left: 57vw; margin-right: auto; padding-top: clamp(118px, 12vh, 150px); }
+.hero h1 { max-width: 100%; margin: 0; font: 500 clamp(3.35rem, 4.45vw, 5rem)/.86 "Cormorant Garamond", Georgia, serif; letter-spacing: -.04em; }
 .hero-rotator { display: block; min-height: 1.08em; color: #e7d6bb; opacity: 1; transform: translateY(0); transition: opacity 220ms ease, transform 220ms ease; }
 .hero-rotator.is-changing { opacity: 0; transform: translateY(8px); }
+.hero-rotator.is-stacked { display: grid; }
+.hero-rotator__item { grid-area: 1 / 1; opacity: 0; transform: translateY(8px); transition: opacity 320ms ease, transform 320ms ease; }
+.hero-rotator__item.is-active { opacity: 1; transform: translateY(0); transition-delay: 160ms; }
 .hero__lead { max-width: 520px; margin: 24px 0 28px; color: rgba(255,255,255,.82); font-size: .94rem; font-weight: 300; }
 .hero-form { display: flex; flex-direction: column; gap: 18px; width: min(420px, 100%); border: 1px solid rgba(255,255,255,.38); padding: 23px 25px 25px; background: rgba(10,25,31,.48); box-shadow: 0 24px 70px rgba(0,0,0,.12); backdrop-filter: blur(16px); }
 .hero-form__intro { padding-bottom: 3px; }
