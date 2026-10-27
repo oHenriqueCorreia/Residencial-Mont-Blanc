@@ -203,27 +203,50 @@
     try { words = JSON.parse(rotator.dataset.words || "[]"); } catch { words = []; }
     if (words.length < 2) return;
 
-    // Todas as frases ficam empilhadas na mesma célula: a altura é sempre a da mais longa.
-    const items = words.map((word, index) => {
-      const item = document.createElement("span");
-      item.className = "hero-rotator__item";
-      item.textContent = word;
-      if (index === 0) item.classList.add("is-active");
-      else item.setAttribute("aria-hidden", "true");
-      return item;
-    });
-    rotator.textContent = "";
-    rotator.classList.add("is-stacked");
-    items.forEach((item) => rotator.appendChild(item));
+    // Digita a frase atual, pausa e apaga antes de avançar para a próxima.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      rotator.textContent = words[0];
+      return;
+    }
 
-    let current = 0;
-    window.setInterval(() => {
-      items[current].classList.remove("is-active");
-      items[current].setAttribute("aria-hidden", "true");
-      current = (current + 1) % items.length;
-      items[current].classList.add("is-active");
-      items[current].removeAttribute("aria-hidden");
-    }, 3400);
+    let currentWord = 0;
+    let character = 0;
+    let deleting = false;
+
+    rotator.textContent = "";
+    rotator.classList.add("is-typing");
+
+    const type = () => {
+      const word = words[currentWord];
+
+      if (!deleting) {
+        character += 1;
+        rotator.textContent = word.slice(0, character);
+
+        if (character === word.length) {
+          deleting = true;
+          window.setTimeout(type, 1900);
+          return;
+        }
+
+        window.setTimeout(type, 72);
+        return;
+      }
+
+      character -= 1;
+      rotator.textContent = word.slice(0, character);
+
+      if (character === 0) {
+        deleting = false;
+        currentWord = (currentWord + 1) % words.length;
+        window.setTimeout(type, 420);
+        return;
+      }
+
+      window.setTimeout(type, 38);
+    };
+
+    window.setTimeout(type, 450);
   });
 
   const observer = new IntersectionObserver(
