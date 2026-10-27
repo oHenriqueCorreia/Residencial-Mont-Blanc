@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://residencial-mont-blanc.vercel.app/sitemap.xml

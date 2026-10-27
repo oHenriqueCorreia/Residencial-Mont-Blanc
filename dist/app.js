@@ -201,7 +201,7 @@
   document.querySelectorAll("[data-rotator]").forEach((rotator) => {
     let words = [];
     try { words = JSON.parse(rotator.dataset.words || "[]"); } catch { words = []; }
-    if (words.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (words.length < 2) return;
 
     // Todas as frases ficam empilhadas na mesma célula: a altura é sempre a da mais longa.
     const items = words.map((word, index) => {
