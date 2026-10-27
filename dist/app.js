@@ -204,11 +204,6 @@
     if (words.length < 2) return;
 
     // Digita a frase atual, pausa e apaga antes de avançar para a próxima.
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      rotator.textContent = words[0];
-      return;
-    }
-
     let currentWord = 0;
     let character = 0;
     let deleting = false;
